@@ -1,4 +1,4 @@
-medusa it is like shopify, an entire ecosystem to develop eCommerce platforms. I'll give it a try.
+Medusa it is like shopify, an entire ecosystem to develop eCommerce platforms. I'll give it a try.
 
 ####################################################################################################
 
@@ -135,6 +135,15 @@ You need three main frameworks to create custom features in Medusa.
 • Module: a package with commerce logic for a single domain. It defines new tables to add to the database, and a class of methods to manage these tables. 
 • Workflow: a tool to perform an operation comprising multiple steps with built-in rollback and retry mechanisms.
 • API route: a REST endpoint that exposes commerce features to clients, such as the admin dashboard or a storefront. The API route executes a workflow that implements the commerce feature using modules.
+
+
+2.1.1. Guide: Implement Brand Module
+
+Madusa uses what is called "brand", and building a brand module that adds a brand table to the database and provide data-management features of it, is what we will learn in this chapter.
+
+A module is a reusable package of funcionalities related to a single domain or integration.
+Medusa comes with multiple pre-built modules for core commerce needs, such as the Cart Module.
+That holds the data models and business logic for cart operations.
 
 
 
