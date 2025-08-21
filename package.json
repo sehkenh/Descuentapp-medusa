@@ -1,0 +1,15 @@
+{
+  "name": "descuentapp-medusa-workspace",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd descuentapp && npm run dev",
+    "dev:frontend": "cd descuentapp-storefront && npm run dev",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd descuentapp && npm run start",
+    "start:frontend": "cd descuentapp-storefront && npm run start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
