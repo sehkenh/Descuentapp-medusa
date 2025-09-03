@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreateBrandStep - Explicación</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .factory-icon {
+            font-size: 4rem;
+            margin: 20px 0;
+        }
+        
+        .section {
+            margin: 30px 0;
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid;
+        }
+        
+        .what-section {
+            background: linear-gradient(135deg, #ffeef8, #f0e6ff);
+            border-left-color: #9c27b0;
+        }
+        
+        .steps-section {
+            background: linear-gradient(135deg, #e8f5e8, #f0f8ff);
+            border-left-color: #4caf50;
+        }
+        
+        .simple-section {
+            background: linear-gradient(135deg, #fff8e1, #fce4ec);
+            border-left-color: #ff9800;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .step {
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255,255,255,0.7);
+            border-radius: 10px;
+            border-left: 4px solid;
+        }
+        
+        .step-1 { border-left-color: #2196f3; }
+        .step-2 { border-left-color: #ff9800; }
+        .step-3 { border-left-color: #4caf50; }
+        .step-4 { border-left-color: #9c27b0; }
+        
+        .step-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #667eea;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        
+        .code-snippet {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            margin: 10px 0;
+            border-left: 3px solid #667eea;
+            font-size: 0.9rem;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        
+        .emoji {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+        
+        .analogy-box {
+            background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        
+        .flow-diagram {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 25px 0;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .flow-step {
+            background: white;
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            flex: 1;
+            min-width: 150px;
+            transition: transform 0.3s ease;
+        }
+        
+        .flow-step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .arrow {
+            font-size: 2rem;
+            color: #667eea;
+            margin: 0 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .flow-diagram {
+                flex-direction: column;
+            }
+            .arrow {
+                transform: rotate(90deg);
+            }
+            .title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">CreateBrandStep</h1>
+            <p class="subtitle">Explicación con peras y manzanas 🍎🍊</p>
+            <div class="factory-icon">🏭</div>
+        </div>
+
+        <div class="section what-section">
+            <h2 class="section-title">
+                <span class="emoji">🤔</span>
+                ¿Qué hace este código?
+            </h2>
+            <div class="analogy-box">
+                <strong>Es como crear una "estación de trabajo" en tu fábrica de etiquetas</strong><br>
+                donde produces marcas (brands) para productos
+            </div>
+            <p>El código define una <span class="highlight">función especializada</span> que se encarga de crear nuevas marcas de manera ordenada y sistemática.</p>
+        </div>
+
+        <div class="section steps-section">
+            <h2 class="section-title">
+                <span class="emoji">🔄</span>
+                Proceso paso a paso
+            </h2>
+
+            <div class="flow-diagram">
+                <div class="flow-step">
+                    <strong>📥 INPUT</strong><br>
+                    Datos de la marca
+                </div>
+                <div class="arrow">→</div>
+                <div class="flow-step">
+                    <strong>🔧 PROCESO</strong><br>
+                    Crear marca
+                </div>
+                <div class="arrow">→</div>
+                <div class="flow-step">
+                    <strong>📤 OUTPUT</strong><br>
+                    Marca + ID
+                </div>
+            </div>
+
+            <div class="step step-1">
+                <span class="step-number">1</span>
+                <strong>Llega un pedido</strong> <code>input: CreateBrandStepInput</code>
+                <p>Como si alguien te dijera: <em>"Necesito una marca que se llame 'Manzanas Rojas' con logo azul"</em></p>
+            </div>
+
+            <div class="step step-2">
+                <span class="step-number">2</span>
+                <strong>Buscas las herramientas</strong> <code>container.resolve(BRAND_MODULE)</code>
+                <p>Es como ir al almacén y sacar la <span class="highlight">"máquina para hacer marcas"</span> (BrandModuleService)</p>
+            </div>
+
+            <div class="step step-3">
+                <span class="step-number">3</span>
+                <strong>Produces la marca</strong> <code>brandModuleService.createBrands(input)</code>
+                <p>Usas la máquina con los datos del pedido para crear la marca en la base de datos</p>
+            </div>
+
+            <div class="step step-4">
+                <span class="step-number">4</span>
+                <strong>Entregas el resultado</strong> <code>new StepResponse(brand, brand.id)</code>
+                <p>Le das al cliente su nueva marca + un <span class="highlight">"número de seguimiento"</span> (el brand.id)</p>
+            </div>
+        </div>
+
+        <div class="section simple-section">
+            <h2 class="section-title">
+                <span class="emoji">💡</span>
+                En palabras súper simples
+            </h2>
+            
+            <div class="analogy-box">
+                <strong>🍎 ANALOGÍA:</strong><br>
+                Es como una receta de cocina automatizada que toma ingredientes (datos), 
+                usa las herramientas correctas (servicio), cocina el plato (crea la marca), 
+                y te lo sirve con una etiqueta (devuelve marca + ID)
+            </div>
+
+            <p><strong>Función:</strong> Recibe información sobre una marca que quieres crear</p>
+            <p><strong>Proceso:</strong> Usa un servicio especializado para crearla</p>
+            <p><strong>Resultado:</strong> Te devuelve la marca creada + su identificador único</p>
+
+            <div class="code-snippet">
+                // En resumen:<br>
+                input (datos) → servicio (procesa) → marca creada + ID
+            </div>
+        </div>
+    </div>
+</body>
+</html>
